@@ -97,10 +97,65 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <p>[TOC]</p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><p>生成标题采用如下代码：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure></p>
-<h1 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h1><h2 id="文章结构"><a href="#文章结构" class="headerlink" title="文章结构"></a>文章结构</h2><h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>生成目录采用如下代码<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[TOC]</span><br></pre></td></tr></table></figure></p>
-<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul>
+        <!-- toc -->
+<ul>
+<li><a href="#一级标题">一级标题</a><ul>
+<li><a href="#二级标题">二级标题</a><ul>
+<li><a href="#三级标题">三级标题</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#语法">语法</a><ul>
+<li><a href="#文章结构">文章结构</a><ul>
+<li><a href="#目录">目录</a></li>
+<li><a href="#列表">列表</a></li>
+<li><a href="#链接">链接</a></li>
+<li><a href="#注释">注释</a></li>
+</ul>
+</li>
+<li><a href="#外观">外观</a><ul>
+<li><a href="#字体">字体</a></li>
+<li><a href="#引用">引用</a></li>
+<li><a href="#代码环境">代码环境</a></li>
+</ul>
+</li>
+<li><a href="#图表">图表</a><ul>
+<li><a href="#图片">图片</a></li>
+</ul>
+</li>
+<li><a href="#latex">LaTeX</a><ul>
+<li><a href="#插入公式">插入公式</a></li>
+<li><a href="#自动补全">自动补全</a><ul>
+<li><a href="#关于下标">关于下标</a></li>
+<li><a href="#关于分式">关于分式</a></li>
+<li><a href="#关于巨算符">关于巨算符</a></li>
+<li><a href="#括号">括号</a></li>
+<li><a href="#方程组">方程组</a></li>
+<li><a href="#矩阵">矩阵</a></li>
+</ul>
+</li>
+<li><a href="#自定义快捷键">自定义快捷键</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#云端上传笔记">云端上传笔记</a><ul>
+<li><a href="#git入门">git入门</a><ul>
+<li><a href="#初始化仓库">初始化仓库</a></li>
+<li><a href="#回溯历史版本">回溯历史版本</a></li>
+<li><a href="#撤销修改">撤销修改</a></li>
+<li><a href="#删除文件">删除文件</a></li>
+<li><a href="#github远程库">github远程库</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h1><span id="一级标题">一级标题</span></h1><h2><span id="二级标题">二级标题</span></h2><h3><span id="三级标题">三级标题</span></h3><p>生成标题采用如下代码：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br><span class="line"><span class="section">## 二级标题</span></span><br><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure></p>
+<h1><span id="语法">语法</span></h1><h2><span id="文章结构">文章结构</span></h2><h3><span id="目录">目录</span></h3><p>生成目录采用如下代码<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[TOC]</span><br></pre></td></tr></table></figure></p>
+<h3><span id="列表">列表</span></h3><ul>
 <li>无序列表<ul>
 <li>嵌套无序列表</li>
 <li>嵌套无序列表</li>
@@ -117,31 +172,31 @@
 </li>
 <li>有序列表 2</li>
 <li>有序列表 3<br><br><br>代码如下：<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*</span> 无序列表</span><br><span class="line"><span class="bullet">  *</span> 嵌套无序列表</span><br><span class="line"><span class="bullet">  *</span> 嵌套无序列表</span><br><span class="line"><span class="bullet">*</span> 无序列表</span><br><span class="line"><span class="bullet">*</span> 无序列表</span><br><span class="line"><span class="bullet">1.</span> 有序列表 1</span><br><span class="line"><span class="bullet">   1.</span> 嵌套有序列表 1</span><br><span class="line"><span class="bullet">   2.</span> 嵌套有序列表 2</span><br><span class="line"><span class="bullet">2.</span> 有序列表 2</span><br><span class="line"><span class="bullet">3.</span> 有序列表 3</span><br></pre></td></tr></table></figure>
-<h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3>插入链接：<br><a href="&quot;www.baidu.com&quot;">百度搜索</a></li>
+<h3><span id="链接">链接</span></h3>插入链接：<br><a href="&quot;www.baidu.com&quot;">百度搜索</a></li>
 </ol>
 <p><br></p>
 <p>采用代码如下：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">百度搜索</span>](<span class="link">&quot;www.baidu.com&quot;</span>)</span><br></pre></td></tr></table></figure>
-<h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><!-- 你看不见我 -->
+<h3><span id="注释">注释</span></h3><!-- 你看不见我 -->
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 你看不见我 --&gt;</span><br></pre></td></tr></table></figure>
 <p>==快捷键 Ctrl + / 将当前行注释和反注释==</p>
-<h2 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h2><h3 id="字体"><a href="#字体" class="headerlink" title="字体"></a>字体</h3><p>效果如下：<br><em>斜体</em> 或者 _斜体_<br><strong>粗体</strong><br><strong><em>加粗斜体</em></strong><br><del>删除线</del></p>
+<h2><span id="外观">外观</span></h2><h3><span id="字体">字体</span></h3><p>效果如下：<br><em>斜体</em> 或者 _斜体_<br><strong>粗体</strong><br><strong><em>加粗斜体</em></strong><br><del>删除线</del></p>
 <p><br></p>
 <p>采用代码如下：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*斜体*</span> 或者 <span class="emphasis">_斜体_</span></span><br><span class="line"><span class="strong">**粗体**</span></span><br><span class="line"><span class="strong">**<span class="emphasis">*加粗斜体<span class="strong">**<span class="emphasis">*</span></span></span></span></span><br><span class="line"><span class="emphasis"><span class="strong"><span class="emphasis"><span class="strong">~~删除线~~</span></span></span></span></span><br></pre></td></tr></table></figure></p>
-<h3 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h3><p>效果如下：</p>
+<h3><span id="引用">引用</span></h3><p>效果如下：</p>
 <blockquote>
 <p>引用内容</p>
 </blockquote>
 <p><br></p>
 <p>采用代码如下：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 引用内容</span></span><br></pre></td></tr></table></figure>
-<h3 id="代码环境"><a href="#代码环境" class="headerlink" title="代码环境"></a>代码环境</h3><p>效果如下：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python3</span><br><span class="line">print(&quot;Hello, World!&quot;);</span><br></pre></td></tr></table></figure><br><br><br>采用代码如下：（其中“/”是多余的）</p>
+<h3><span id="代码环境">代码环境</span></h3><p>效果如下：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/python3</span><br><span class="line">print(&quot;Hello, World!&quot;);</span><br></pre></td></tr></table></figure><br><br><br>采用代码如下：（其中“/”是多余的）</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/<span class="code">```python&#123;.line-numbers&#125;</span></span><br><span class="line"><span class="code">    #!/usr/bin/python3</span></span><br><span class="line"><span class="code">    print(&quot;Hello, World!&quot;);</span></span><br><span class="line"><span class="code">/```</span></span><br></pre></td></tr></table></figure>
 <p>行内代码引用用一对`即可</p>
-<h2 id="图表"><a href="#图表" class="headerlink" title="图表"></a>图表</h2><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p><a href="链接地址">超链接名称</a></p>
+<h2><span id="图表">图表</span></h2><h3><span id="图片">图片</span></h3><p><a href="链接地址">超链接名称</a></p>
 <p><img src="图片地址" alt="图片提示语"></p>
 <p>==已应用插件：快捷键Ctrl+alt+V粘贴图片==<br><img src="image/2021-07-09-21-59-23.png" alt="示例"></p>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><div class="table-container">
+<h3><span id="表格">表格</span></h3><div class="table-container">
 <table>
 <thead>
 <tr>
@@ -162,59 +217,59 @@
 </table>
 </div>
 <p>采用代码如下：<br><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[<span class="string">超链接名称</span>](<span class="link">链接地址</span>)</span><br><span class="line"></span><br><span class="line">![<span class="string">图片提示语</span>](<span class="link">图片地址</span>)</span><br><span class="line"></span><br><span class="line">| 表头 | 表头 |</span><br><span class="line">| ---- | ---- |</span><br><span class="line">| 内容 | 内容 |</span><br><span class="line">| 内容 | 内容 |</span><br></pre></td></tr></table></figure></p>
-<h2 id="LaTeX"><a href="#LaTeX" class="headerlink" title="LaTeX"></a>LaTeX</h2><p>本文中VS CODE插件据来自于<br><a href="&quot;https://orangex4.cool/post/notes-in-markdown/#%E5%9C%A8%E7%BA%BF%E6%B5%8F%E8%A7%88&quot;">这篇文章</a></p>
-<h3 id="插入公式"><a href="#插入公式" class="headerlink" title="插入公式"></a>插入公式</h3><p>行内公式：<br>$\int ^1_0 f(x)dx$<br>行间公式：</p>
+<h2><span id="latex">LaTeX</span></h2><p>本文中VS CODE插件据来自于<br><a href="&quot;https://orangex4.cool/post/notes-in-markdown/#%E5%9C%A8%E7%BA%BF%E6%B5%8F%E8%A7%88&quot;">这篇文章</a></p>
+<h3><span id="插入公式">插入公式</span></h3><p>行内公式：<br>$\int ^1_0 f(x)dx$<br>行间公式：</p>
 <script type="math/tex; mode=display">
 \begin{align}
 &\int ^1_0 [f(x)+g(x)]dx \\
 =&\int ^1_0 f(x)dx+\int ^1_0 g(x)dx\end{align}</script><p><br>采用代码如下：</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">行内公式：</span><br><span class="line">$\int ^1<span class="emphasis">_0 f(x)dx$</span></span><br><span class="line"><span class="emphasis">行间公式：</span></span><br><span class="line"><span class="emphasis">$$</span></span><br><span class="line"><span class="emphasis">\begin&#123;align&#125;</span></span><br><span class="line"><span class="emphasis">&amp;\int ^1_</span>0 [f(x)+g(x)]dx \\</span><br><span class="line">=&amp;\int ^1<span class="emphasis">_0 f(x)dx+\int ^1_</span>0 g(x)dx\end&#123;align&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
-<h3 id="自动补全"><a href="#自动补全" class="headerlink" title="自动补全"></a>自动补全</h3><h4 id="关于下标"><a href="#关于下标" class="headerlink" title="关于下标"></a>关于下标</h4><script type="math/tex; mode=display">
+<h3><span id="自动补全">自动补全</span></h3><h4><span id="关于下标">关于下标</span></h4><script type="math/tex; mode=display">
 \begin{align*}
 x^{-1}\\
 \alpha_1,\alpha_2,\cdots,\alpha_n
 \end{align*}</script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">\\-1 ⇒ ^&#123;-1&#125;</span><br><span class="line">\\comma ⇒ \alpha_1,\alpha_2,\cdots,\alpha_n</span><br></pre></td></tr></table></figure>
-<h4 id="关于分式"><a href="#关于分式" class="headerlink" title="关于分式"></a>关于分式</h4><p>选中文本时:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x+1 + \\frac ⇒ \frac&#123;x+1&#125;&#123;&#125;</span><br></pre></td></tr></table></figure><br>在自动补全之后, 按下 Tab 键可以切换到下一个位置</p>
+<h4><span id="关于分式">关于分式</span></h4><p>选中文本时:<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">x+1 + \\frac ⇒ \frac&#123;x+1&#125;&#123;&#125;</span><br></pre></td></tr></table></figure><br>在自动补全之后, 按下 Tab 键可以切换到下一个位置</p>
 <p>对于根式有类似的补全:</p>
 <script type="math/tex; mode=display">
 \sqrt[n]{x+1}</script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">x+1 + \\sqrt ⇒ \sqrt&#123;x+1&#125;</span><br><span class="line">x+1 + \\sqrt ⇒ \sqrt[n]&#123;x+1&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="关于巨算符"><a href="#关于巨算符" class="headerlink" title="关于巨算符"></a>关于巨算符</h4><script type="math/tex; mode=display">\lim_{n\to \infty}x_n</script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\\sum ⇒ \sum_&#123;i=1&#125;</span><br><span class="line">\\prod ⇒ \prod_&#123;i=1&#125;</span><br><span class="line">\\lim ⇒ \lim_&#123;x\to \infty&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="括号"><a href="#括号" class="headerlink" title="括号"></a>括号</h4><script type="math/tex; mode=display">
+<h4><span id="关于巨算符">关于巨算符</span></h4><script type="math/tex; mode=display">\lim_{n\to \infty}x_n</script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">\\sum ⇒ \sum_&#123;i=1&#125;</span><br><span class="line">\\prod ⇒ \prod_&#123;i=1&#125;</span><br><span class="line">\\lim ⇒ \lim_&#123;x\to \infty&#125;</span><br></pre></td></tr></table></figure>
+<h4><span id="括号">括号</span></h4><script type="math/tex; mode=display">
 \begin{aligned}
     \langle x,y\rangle\\
     \{x_1,x_2,\cdots,x_n\}\\
     \left( \alpha \right)
 \end{aligned}</script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">\\angel ⇒ \langle \rangle</span><br><span class="line">\\set ⇒ \&#123; \&#125;</span><br><span class="line">\\bracket ⇒ \left( \right)</span><br><span class="line">\\square_bracket ⇒ \left[ \right]</span><br><span class="line">\\curly_bracket ⇒ \left\&#123; \right&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="方程组"><a href="#方程组" class="headerlink" title="方程组"></a>方程组</h4><script type="math/tex; mode=display">
+<h4><span id="方程组">方程组</span></h4><script type="math/tex; mode=display">
 \begin{cases}
     x_{11}+x_{12}+\cdots+x_{1n}=b_1\\
     x_{11}+x_{12}+\cdots+x_{1n}=b_2\\
     \quad \cdots\\
     x_{m1}+x_{m2}+\cdots+x_{mn}=b_m
 \end{cases}</script><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$$</span><br><span class="line">\begin&#123;cases&#125;</span><br><span class="line">    x_&#123;11&#125;+x_&#123;12&#125;+\cdots+x_&#123;1n&#125;=b_1\\</span><br><span class="line">    x_&#123;11&#125;+x_&#123;12&#125;+\cdots+x_&#123;1n&#125;=b_2\\</span><br><span class="line">    \quad \cdots\\</span><br><span class="line">    x_&#123;m1&#125;+x_&#123;m2&#125;+\cdots+x_&#123;mn&#125;=b_m</span><br><span class="line">\end&#123;cases&#125;</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
-<h4 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h4><script type="math/tex; mode=display">
+<h4><span id="矩阵">矩阵</span></h4><script type="math/tex; mode=display">
 \begin{pmatrix}x_1\\x_2\\\vdots\\x_n\end{pmatrix}</script><script type="math/tex; mode=display">
 \begin{pmatrix}1&1&1\\1&1&1\\1&1&1\end{pmatrix}</script><p>矩阵自动补全<br><figure class="highlight plaintext"><figcaption><span>⇒ \begin&#123;pmatrix&#125;1&1\\1&1\end&#123;pmatrix&#125;</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">\\b22matrix ⇒ \begin&#123;bmatrix&#125;1&amp;1\\1&amp;1\end&#123;bmatrix&#125;</span><br><span class="line">\\v22matrix ⇒ \begin&#123;vmatrix&#125;1&amp;1\\1&amp;1\end&#123;vmatrix&#125;</span><br><span class="line">\\c3vector ⇒ \begin&#123;pmatrix&#125;1\\1\\1\end&#123;pmatrix&#125;</span><br><span class="line">\\r3vector ⇒ \begin&#123;pmatrix&#125;1&amp;1&amp;1\end&#123;pmatrix&#125;</span><br></pre></td></tr></table></figure></p>
-<h3 id="自定义快捷键"><a href="#自定义快捷键" class="headerlink" title="自定义快捷键"></a>自定义快捷键</h3><p>Ctrl+Shift+P搜索open snippet directory</p>
+<h3><span id="自定义快捷键">自定义快捷键</span></h3><p>Ctrl+Shift+P搜索open snippet directory</p>
 <p>已经copy文件markdown.hsnips</p>
-<h1 id="云端上传笔记"><a href="#云端上传笔记" class="headerlink" title="云端上传笔记"></a>云端上传笔记</h1><h2 id="git入门"><a href="#git入门" class="headerlink" title="git入门"></a>git入门</h2><p>git入门参考<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/896202815778784">这篇文章</a></p>
-<h3 id="初始化仓库"><a href="#初始化仓库" class="headerlink" title="初始化仓库"></a>初始化仓库</h3><p>创建一个文件夹，鼠标右键git bash here</p>
+<h1><span id="云端上传笔记">云端上传笔记</span></h1><h2><span id="git入门">git入门</span></h2><p>git入门参考<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/896202815778784">这篇文章</a></p>
+<h3><span id="初始化仓库">初始化仓库</span></h3><p>创建一个文件夹，鼠标右键git bash here</p>
 <p>初始化仓库<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git init</span><br></pre></td></tr></table></figure></p>
 <p>添加文件<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git add &lt;filename&gt;</span><br></pre></td></tr></table></figure></p>
 <p>提交改动<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git commit -m &lt;message&gt;</span><br></pre></td></tr></table></figure><br><img src="image/2021-07-10-11-05-12.png" alt="图示">git add命令实际上就是把要提交的所有修改放到暂存区（Stage），然后，执行git commit就可以一次性把暂存区的所有修改提交到分支。</p>
-<h3 id="回溯历史版本"><a href="#回溯历史版本" class="headerlink" title="回溯历史版本"></a>回溯历史版本</h3><p>查看版本日志<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure></p>
+<h3><span id="回溯历史版本">回溯历史版本</span></h3><p>查看版本日志<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git log</span><br></pre></td></tr></table></figure></p>
 <p>版本更改<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset --hard commit_id</span><br></pre></td></tr></table></figure></p>
 <p>查看命令日志<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></table></figure></p>
-<h3 id="撤销修改"><a href="#撤销修改" class="headerlink" title="撤销修改"></a>撤销修改</h3><p>丢弃工作区的修改：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- file</span><br></pre></td></tr></table></figure></p>
+<h3><span id="撤销修改">撤销修改</span></h3><p>丢弃工作区的修改：<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- file</span><br></pre></td></tr></table></figure></p>
 <p>如果工作区的修改已经被提交，先恢复暂存区<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git reset HEAD &lt;file&gt;</span><br><span class="line">git checkout -- &lt;file&gt;</span><br></pre></td></tr></table></figure></p>
 <p>查看当前状态<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status</span><br></pre></td></tr></table></figure></p>
 <p>查看工作区和版本库里面最新版本的区别<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff HEAD -- readme.txt</span><br></pre></td></tr></table></figure></p>
-<h3 id="删除文件"><a href="#删除文件" class="headerlink" title="删除文件"></a>删除文件</h3><p>rm删除工作区文件<br>此后有两种选择：</p>
+<h3><span id="删除文件">删除文件</span></h3><p>rm删除工作区文件<br>此后有两种选择：</p>
 <ol>
 <li>继续删除操作<br>此时暂存区中文件还未被删除，git rm将删除暂存区中文件。再git commit则将删除操作更新到版本库</li>
 <li>撤销删除<br>$ git checkout — test.txt<br>事实上git checkout是用版本库里的版本替换工作区的版本，即“一键还原工作区”</li>
 </ol>
-<h3 id="github远程库"><a href="#github远程库" class="headerlink" title="github远程库"></a>github远程库</h3><p>根据<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/898732864121440">这篇文章</a>进行配置</p>
+<h3><span id="github远程库">github远程库</span></h3><p>根据<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/896043488029600/898732864121440">这篇文章</a>进行配置</p>
 <p>要关联一个远程库，使用命令<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@server-name:path/repo-name.git；</span><br></pre></td></tr></table></figure></p>
 <p>关联一个远程库时必须给远程库指定一个名字，origin是默认习惯命名；</p>
 <p>关联后，第一次推送master分支的所有内容<br><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></p>
@@ -223,7 +278,7 @@ x^{-1}\\
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/07/10/Markdown/" data-id="ckqxnvhb40001ncv9cufz9uts" data-title="Markdown" class="article-share-link">分享</a>
+      <a data-url="http://example.com/2021/07/10/Markdown/" data-id="ckqxpfvve0001g4v9cm5ldmbs" data-title="Markdown" class="article-share-link">分享</a>
       
       
       
@@ -259,17 +314,17 @@ x^{-1}\\
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h2 id="My-First-Blog"><a href="#My-First-Blog" class="headerlink" title="My First Blog"></a>My First Blog</h2><h3 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World!"></a>Hello World!</h3><p>听说名为“Hello World!”的第一个程序是学习语言的惯例。虽然之前为了试验是否支持LaTeX已经有过好几个“Hello World”了，还是就当这是第一个吧。</p>
-<h3 id="论如何用LaTeX治好强迫症"><a href="#论如何用LaTeX治好强迫症" class="headerlink" title="论如何用LaTeX治好强迫症"></a>论如何用LaTeX治好强迫症</h3><p>就积分式而言：</p>
+        <h2><span id="my-first-blog">My First Blog</span></h2><h3><span id="hello-world">Hello World!</span></h3><p>听说名为“Hello World!”的第一个程序是学习语言的惯例。虽然之前为了试验是否支持LaTeX已经有过好几个“Hello World”了，还是就当这是第一个吧。</p>
+<h3><span id="论如何用latex治好强迫症">论如何用LaTeX治好强迫症</span></h3><p>就积分式而言：</p>
 <p>偷懒写法：<br><code>$$\int f(x) dx$$</code></p>
 <script type="math/tex; mode=display">\int f(x) dx</script><p>强迫症写法：<br><code>$$\int \! f(x)\, \mathrm&#123;d&#125;x$$</code></p>
-<script type="math/tex; mode=display">\int \! f(x)\, \mathrm{d}x</script><h3 id="关于创建本博客的目的"><a href="#关于创建本博客的目的" class="headerlink" title="关于创建本博客的目的"></a>关于创建本博客的目的</h3><p>最近没有学习动力，希望通过这样的输出方式倒逼自己提升。文章的内容主要是个人理科学习的笔记整理，可能还会有一些编程的部分。</p>
-<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>最后，虽然只是用hexo而且还是默认主题的网页，也还没有加入一些必要的功能（如评论等），拥有个人网页的感觉真的很棒啊。也希望通过这样的方式，广泛而深入地学习喜爱的学科的知识。</p>
+<script type="math/tex; mode=display">\int \! f(x)\, \mathrm{d}x</script><h3><span id="关于创建本博客的目的">关于创建本博客的目的</span></h3><p>最近没有学习动力，希望通过这样的输出方式倒逼自己提升。文章的内容主要是个人理科学习的笔记整理，可能还会有一些编程的部分。</p>
+<h3><span id="写在最后">写在最后</span></h3><p>最后，虽然只是用hexo而且还是默认主题的网页，也还没有加入一些必要的功能（如评论等），拥有个人网页的感觉真的很棒啊。也希望通过这样的方式，广泛而深入地学习喜爱的学科的知识。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2019/08/25/Hello-World-0/" data-id="ckqxnvhay0000ncv9gfj8et8g" data-title="Hello World" class="article-share-link">分享</a>
+      <a data-url="http://example.com/2019/08/25/Hello-World-0/" data-id="ckqxpfvv90000g4v9cmfh3df6" data-title="Hello World" class="article-share-link">分享</a>
       
       
       
@@ -306,19 +361,19 @@ x^{-1}\\
     <div class="e-content article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<h2><span id="quick-start">Quick Start</span></h2><h3><span id="create-a-new-post">Create a new post</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3><span id="run-server">Run server</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3><span id="generate-static-files">Generate static files</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3><span id="deploy-to-remote-sites">Deploy to remote sites</span></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2019/08/25/hello-world/" data-id="ckqxnvhb70003ncv975fk9es8" data-title="Hello World" class="article-share-link">分享</a>
+      <a data-url="http://example.com/2019/08/25/hello-world/" data-id="ckqxpfvvi0003g4v9c6sjblot" data-title="Hello World" class="article-share-link">分享</a>
       
       
       
@@ -433,20 +488,5 @@ x^{-1}\\
 
 
   </div>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>

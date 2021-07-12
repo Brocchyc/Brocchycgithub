@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>微分流形1——微分流形 | Brocchyc&#39;s Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="前言 微分流形 拓扑流形 微分结构 坐标卡 坐标卡的相容性 坐标图册 微分结构 $C^\infty$- 映照   切空间、余切空间 函数芽 切向量 余切空间 切空间       前言该系列是我学习微分流形的笔记，采用的教材是陈省身、陈维恒的《微分几何讲义》。 微分流形本节通过坐标图册的方式构造了一种新的组合对象——流形，并在其上赋予微分结构。 拓扑流形拓扑空间 $M$ 称为 $m$ 维拓扑流形">
+<meta property="og:type" content="article">
+<meta property="og:title" content="微分流形1——微分流形">
+<meta property="og:url" content="http://example.com/2021/07/12/manifolds-1/index.html">
+<meta property="og:site_name" content="Brocchyc&#39;s Blog">
+<meta property="og:description" content="前言 微分流形 拓扑流形 微分结构 坐标卡 坐标卡的相容性 坐标图册 微分结构 $C^\infty$- 映照   切空间、余切空间 函数芽 切向量 余切空间 切空间       前言该系列是我学习微分流形的笔记，采用的教材是陈省身、陈维恒的《微分几何讲义》。 微分流形本节通过坐标图册的方式构造了一种新的组合对象——流形，并在其上赋予微分结构。 拓扑流形拓扑空间 $M$ 称为 $m$ 维拓扑流形">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-07-12T04:39:00.000Z">
+<meta property="article:modified_time" content="2021-07-12T11:52:38.348Z">
+<meta property="article:author" content="Brocchyc">
+<meta property="article:tag" content="manifolds">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Brocchyc's Blog" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Brocchyc&#39;s Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">一个理科生的博客</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS 订阅"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="搜索"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-manifolds-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/07/12/manifolds-1/" class="article-date">
+  <time class="dt-published" datetime="2021-07-12T04:39:00.000Z" itemprop="datePublished">2021-07-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      微分流形1——微分流形
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <!-- toc -->
+<ul>
+<li><a href="#前言">前言</a></li>
+<li><a href="#微分流形">微分流形</a><ul>
+<li><a href="#拓扑流形">拓扑流形</a></li>
+<li><a href="#微分结构">微分结构</a><ul>
+<li><a href="#坐标卡">坐标卡</a></li>
+<li><a href="#坐标卡的相容性">坐标卡的相容性</a></li>
+<li><a href="#坐标图册">坐标图册</a></li>
+<li><a href="#微分结构-1">微分结构</a></li>
+<li><a href="#cinfty-映照">$C^\infty$- 映照</a></li>
+</ul>
+</li>
+<li><a href="#切空间-余切空间">切空间、余切空间</a><ul>
+<li><a href="#函数芽">函数芽</a></li>
+<li><a href="#切向量">切向量</a></li>
+<li><a href="#余切空间">余切空间</a></li>
+<li><a href="#切空间">切空间</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<h2><span id="前言">前言</span></h2><p>该系列是我学习微分流形的笔记，采用的教材是陈省身、陈维恒的《微分几何讲义》。</p>
+<h2><span id="微分流形">微分流形</span></h2><p>本节通过坐标图册的方式构造了一种新的组合对象——流形，并在其上赋予微分结构。</p>
+<h3><span id="拓扑流形">拓扑流形</span></h3><p>拓扑空间 $M$ 称为 $m$ 维拓扑流形，若其满足以下条件：</p>
+<ol>
+<li>Hausdorff空间</li>
+<li>$\forall x\in M\quad \exists\, x\ \text{的邻域}\,U\quad s.t. \quad U\ \text{同胚于}\, \mathbb{R}^m$ 中的开集。</li>
+</ol>
+<p><strong>注：</strong> 本书当中一般约定流形 $M$ 满足C2条件，即：$M$ 有可数的拓扑基</p>
+<h3><span id="微分结构">微分结构</span></h3><h4><span id="坐标卡">坐标卡</span></h4><p>$(U,\phi_U)$ 称为坐标卡，$\phi_U$ 是 $M$ 中开集 $U$ 与 $\mathbb{R}^m$ 中开集的同胚。</p>
+<h4><span id="坐标卡的相容性">坐标卡的相容性</span></h4><p>两个坐标卡 $(U,\phi_U)$ 和 $(V,\phi_V)$ 称为 $C^r$- 相容的，若或者 $U\cap V= \varnothing$，或者 $U\cap V \neq \varnothing$ 有 $\phi_U\circ\phi_V^{-1}$ 和 $\phi_V\circ \phi_U^{-1}$ 都是 $C^r$- 映照 </p>
+<h4><span id="坐标图册">坐标图册</span></h4><p>流形 $M$ 的开覆盖 $\mathcal{U}=\{U_\alpha\}_{\alpha\in\Lambda}$ 称为 $M$ 的 $C^r$- 坐标图册，若 $U_\alpha$ 之间均是 $C^r$- 相容的。</p>
+<h4><span id="微分结构">微分结构</span></h4><p>流形 $M$ 上的极大 $C^r$- 坐标图册 $\mathscr{A}$ 称为 $M$ 上的一个 $C^r$- 微分结构。</p>
+<p>极大的内涵是：对于任一与 $\mathscr{A}$ $C^r$- 相容的坐标卡 $U$，均有 $U\in \mathscr{A}$</p>
+<p>定义了微分结构的流形，称为 <strong>$C^r$- 微分流形</strong></p>
+<p>特别地，具有 $C^\infty$- 微分结构的流形称为<strong>光滑流形</strong></p>
+<p>至此我们在拓扑流形上定义了微分结构，使之成为微分流形，以此为基础，我们可以讨论流形之间映照的可微性。</p>
+<p><strong>注：</strong> 无特别说明，此后我们讨论的流形是光滑流形。</p>
+<h4><span id="cinfty-映照">$C^\infty$- 映照</span></h4><p>流形 $M$ 和 $N$ 之间的映照 $f:M\rightarrow N$ 称为 $C^\infty$ 的，是指：</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+\forall p\in M\quad q\triangleq f(p)\in N   \quad\exists p\ \text{坐标卡}\,U\quad q\ \text{坐标卡}\,V\\
+s.t. \quad \phi_V\circ f \circ\phi_U^{-1}\ \text{是}\,C^\infty\ \text{的}
+\end{aligned}</script><h3><span id="切空间-余切空间">切空间、余切空间</span></h3><p>$M$ 是一流形，$p\in M$ 是其上一点，本节我们讨论流形在一点邻近的性态。</p>
+<h4><span id="函数芽">函数芽</span></h4><p>以 $C_p^\infty$ 记在 $p$ 邻域内 $C^\infty$ 的函数全体。</p>
+<p>在 $C_p^\infty$ 上定义等价关系 $\sim$ 如下：</p>
+<script type="math/tex; mode=display">f,g\in C_p^\infty \quad f \sim g\Leftrightarrow \exists \,p \ \text{邻域}\, U\quad s.t.\quad f|_U=g|_U</script><p>定义 $\mathscr{F}_p\triangleq C_p^\infty /\sim$ ，其中元素 $[f]$ 称为流形 $M$ 在 $p$ 点处的 $C^\infty$- 函数芽</p>
+<h4><span id="切向量">切向量</span></h4><p>$\gamma:(-\delta,\delta)\rightarrow M$ 是 $p$ 邻近的 $C^\infty$- 曲线，可定义 $\gamma$ 对函数芽 $[f]$ 的作用为：</p>
+<script type="math/tex; mode=display">
+<\gamma,[f]>\triangleq \left. \frac{\mathrm{d}(f\circ\gamma)}{\mathrm{d}t}\right |_{t=0}</script><p>事实上，$\gamma$ 表示了一个切向量。</p>
+<h4><span id="余切空间">余切空间</span></h4><p>定义 $\mathscr{H}_p\triangleq\left\{ [f]\in \mathscr{F}_p\,|\quad&lt;\gamma,[f]&gt;= 0\quad \forall \gamma\right\}$</p>
+<p>显见 $\mathscr{H}_p$ 是 $\mathscr{F}_p$ 的线性子空间</p>
+<p>定义 $F^<em>_p\triangleq \mathscr{F}_p/\mathscr{H}_p$ 为 $M$ 在 $p$ 点处的<em>*余切空间</em></em>，其中元素记为 $(\mathrm{d}f)_p$，称为余切矢量。</p>
+<p>容易证明 $F^*_p$ 是一个 $m$ 维线性空间，$\{\mathrm{d}u^i\}_{i=1}^m$ 是其一组基，其中 $u^i$ 是坐标函数，将 $p\in M$ 映到相应的坐标分量。</p>
+<script type="math/tex; mode=display">
+\begin{aligned}
+    <\gamma,\mathrm{d}f>&=\left. \frac{\mathrm{d}(f\circ\gamma)}{\mathrm{d}t}\right |_{t=0}\\
+    &= \left. \frac{\mathrm{d}((f\circ \phi_U^{-1})\circ(\phi_U\circ\gamma))}{\mathrm{d}t}\right |_{t=0}\\
+    &= \sum_{i}\frac{\partial (f\circ\phi_U^{-1})}{\partial u^i}\cdot \frac{\mathrm{d}(u^i\circ\gamma)}{\mathrm{d}t}\\
+    &=<\gamma,\sum_i \frac{\partial (f\circ\phi_U^{-1})}{\partial u^i}\mathrm{d}u^i>\\
+\end{aligned}</script><p>即：</p>
+<script type="math/tex; mode=display">
+\mathrm{d}f=\sum_i \frac{\partial (f\circ\phi_U^{-1})}{\partial u^i}\mathrm{d}u^i</script><h4><span id="切空间">切空间</span></h4><p>定义 $M$ 在 $p$ 处的切空间 $T_{p}$ 为余切空间 $T^*_p$ 的对偶空间，容易证明 $T_p$ 是 $m$ 维线性空间，$\left \{\dfrac{\partial }{\partial u^i}\right \}_{i=1}^m$ 是 $T_p$ 的一组基。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/07/12/manifolds-1/" data-id="ckr0kj71g0000gwv9g4wufcbj" data-title="微分流形1——微分流形" class="article-share-link">分享</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/manifolds/" rel="tag">manifolds</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/11/math-analysis-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">后一篇</strong>
+      <div class="article-nav-title">数学分析1——隐函数定理及动力系统初步</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/analysis/" rel="tag">analysis</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/manifolds/" rel="tag">manifolds</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/typing/" rel="tag">typing</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/analysis/" style="font-size: 10px;">analysis</a> <a href="/tags/manifolds/" style="font-size: 10px;">manifolds</a> <a href="/tags/typing/" style="font-size: 20px;">typing</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/07/">七月 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">八月 2019</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/07/12/manifolds-1/">微分流形1——微分流形</a>
+          </li>
+        
+          <li>
+            <a href="/2021/07/11/math-analysis-1/">数学分析1——隐函数定理及动力系统初步</a>
+          </li>
+        
+          <li>
+            <a href="/2021/07/10/Markdown/">Markdown</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/25/Hello-World-0/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2019/08/25/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 Brocchyc<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</body>
+</html>

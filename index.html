@@ -150,9 +150,9 @@ s.t. \quad \phi_V\circ f \circ\phi_U^{-1}\ \text{是}\,C^\infty\ \text{的}
 <h4><span id="切向量">切向量</span></h4><p>$\gamma:(-\delta,\delta)\rightarrow M$ 是 $p$ 邻近的 $C^\infty$- 曲线，可定义 $\gamma$ 对函数芽 $[f]$ 的作用为：</p>
 <script type="math/tex; mode=display">
 <\gamma,[f]>\triangleq \left. \frac{\mathrm{d}(f\circ\gamma)}{\mathrm{d}t}\right |_{t=0}</script><p>事实上，$\gamma$ 表示了一个切向量。</p>
-<h4><span id="余切空间">余切空间</span></h4><p>定义 $\mathscr{H}_p\triangleq \left\{ [f]\in \mathscr{F}_p\,|\quad&lt;\gamma,[f]&gt;= 0\quad \forall \gamma\right\}$</p>
+<h4><span id="余切空间">余切空间</span></h4><p>定义 $\mathscr{H}_p\triangleq\left\{ [f]\in \mathscr{F}_p\,|\quad&lt;\gamma,[f]&gt;= 0\quad \forall \gamma\right\}$</p>
 <p>显见 $\mathscr{H}_p$ 是 $\mathscr{F}_p$ 的线性子空间</p>
-<p>定义 $F^{*}_p \triangleq \mathscr{F}_p/\mathscr{H}_p$ 为 $M$ 在 $p$ 点处的余切空间，其中元素记为 $(\mathrm{d}f)_p$，称为余切矢量。</p>
+<p>定义 $F^<em>_p\triangleq \mathscr{F}_p/\mathscr{H}_p$ 为 $M$ 在 $p$ 点处的<em>*余切空间</em></em>，其中元素记为 $(\mathrm{d}f)_p$，称为余切矢量。</p>
 <p>容易证明 $F^*_p$ 是一个 $m$ 维线性空间，$\{\mathrm{d}u^i\}_{i=1}^m$ 是其一组基，其中 $u^i$ 是坐标函数，将 $p\in M$ 映到相应的坐标分量。</p>
 <script type="math/tex; mode=display">
 \begin{aligned}
@@ -700,5 +700,20 @@ x^{-1}\\
 
 
   </div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 </body>
 </html>
